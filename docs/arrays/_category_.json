@@ -1,0 +1,8 @@
+{
+  "label": "Arrays",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about arrays in JavaScript, including creating custom arrays and methods."
+  }
+}
