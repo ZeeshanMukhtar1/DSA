@@ -70,7 +70,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/ZeeshanMukhtar1/DSA",
             label: "GitHub",
             position: "right",
           },
