@@ -52,5 +52,11 @@ class MyArray {
 }
 
 const myArray = new MyArray();
-console.log(myArray); // MyArray { length: 0, data: {} }
+console.log(myArray);
+```
+
+### Output
+
+```bash
+MyArray { length: 0, data: {} }
 ```
