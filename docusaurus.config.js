@@ -2,8 +2,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "DSA in JavaScript",
-  tagline: "Data Structures and Algorithms in JavaScript",
+  title: "DSA Simplified with JavaScript",
+  tagline: "Step-by-Step Guide to Data Structures and Algorithms",
   favicon: "img/js.svg",
 
   // Set the production url of your site here
@@ -56,9 +56,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "DSA",
         logo: {
-          alt: "My Site Logo",
+          alt: "DSA logo",
           src: "img/logo.svg",
         },
         items: [
@@ -68,7 +68,7 @@ const config = {
             position: "left",
             label: "Tutorial",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Blog", position: "right" },
           {
             href: "https://github.com/ZeeshanMukhtar1/DSA",
             label: "GitHub",
