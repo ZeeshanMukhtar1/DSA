@@ -6,19 +6,15 @@ sidebar_position: 6
 
 ## O(log n) Complexity
 
-### In Depth
-
-O(log n) denotes logarithmic complexity. The running time of the algorithm increases logarithmically as the input size grows.
-
-### Diagram
-
-<!-- ![O(log n) Diagram](path_to_o_logn_diagram) -->
+O(log n) denotes logarithmic complexity. The execution time of the algorithm increases logarithmically as the input size grows.
 
 ### Divide & Conquer
 
 Logarithmic complexity often appears in divide-and-conquer algorithms, such as binary search.
 
-### In Action (Coding)
+### Example
+
+Consider a binary search algorithm:
 
 ```javascript
 function binarySearch(arr, target) {

@@ -6,21 +6,48 @@ sidebar_position: 5
 
 ## O(n^2) Complexity
 
-O(n^2) denotes quadratic time complexity. The running time of the algorithm is proportional to the square of the input size.
+O(n^2) denotes quadratic time complexity. The execution time of the algorithm grows quadratically with the size of the input data.
 
-### In Action (Coding)
+### Example
+
+Consider a function that finds pairs in an array:
 
 ```javascript
-function bubbleSort(arr) {
+function findPairs(arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - i - 1; j++) {
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
+    for (let j = i + 1; j < arr.length; j++) {
+      console.log(`Pair: ${arr[i]}, ${arr[j]}`);
     }
   }
-  return arr;
 }
+
+const numbers = [1, 2, 3, 4, 5];
+findPairs(numbers);
+```
+
+### Drop Non-Dominant Terms
+
+```javascript
+function findPairs(arr) {
+  // O(n^2)
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      console.log(`Pair: ${arr[i]}, ${arr[j]}`);
+    }
+  }
+
+  // O(n)
+  for (let q = 0; q < 5; q++) {
+    console.log("-------------", q);
+  }
+
+  // If we combine all the "O" operations it becomes O(n^2 + n)
+  // O(n^2) is a Dominant term
+  // "n" is a Non-Dominant term
+  // So we remove the "non-dominant" term and we're only left with O(n^2)
+  // This way, we simplify our bigO
+}
+
+const numbers = [1, 2, 3, 4, 5];
+findPairs(numbers);
 ```

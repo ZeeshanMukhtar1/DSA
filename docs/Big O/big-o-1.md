@@ -6,18 +6,14 @@ sidebar_position: 4
 
 ## O(1) Complexity
 
-### In Depth
+O(1) denotes constant time complexity. The execution time of an algorithm remains constant regardless of the input size.
 
-O(1) denotes constant time complexity. The running time of the algorithm does not change with the size of the input.
+### Example
 
-### Diagram
-
-<!-- ![O(1) Diagram](path_to_o_1_diagram) -->
-
-### In Action (Coding)
+Consider an array of numbers:
 
 ```javascript
-function getFirstElement(arr) {
-  return arr[0];
-}
+const numbers = [1, 2, 3, 4, 5];
+const getElement = (arr, index) => arr[index];
+console.log(getElement(numbers, 0)); // Output: 1
 ```

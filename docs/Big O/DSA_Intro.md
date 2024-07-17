@@ -1,6 +1,6 @@
 ---
 id: intro-to-dsa
-title: DSA intro
+title: DSA Introduction
 sidebar_position: 1
 ---
 
@@ -12,12 +12,15 @@ An **algorithm** is a set of instructions that tell the computer how to do somet
 
 ## Why Learn DSA?
 
-Learning Data Structures and Algorithms (DSA) is crucial for efficient problem-solving and is highly valued by top tech companies like `Google`, `Amazon`, and `Facebook.`
+Learning Data Structures and Algorithms (DSA) is crucial for efficient problem-solving and is highly valued by top tech companies like `Google`, `Amazon`, and `Facebook`.
 
-### Task `Student Finder`
+:::tip
+
+### Task: Student Finder
 
 1. Create an array with 5 student names.
 2. Create a function that takes two parameters: `allStudents` (array) and `studentName` (string). The function should iterate over all students and find the specific student name.
+   :::
 
 ### Identifying Data and Algorithm
 

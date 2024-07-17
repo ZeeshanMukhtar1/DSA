@@ -1,5 +1,5 @@
 ---
-id: intro-to-Big-O
+id: intro-to-big-o
 title: Big O Notation
 sidebar_position: 2
 ---

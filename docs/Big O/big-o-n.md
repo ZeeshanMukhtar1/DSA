@@ -6,25 +6,47 @@ sidebar_position: 3
 
 ## O(n) Complexity
 
-O(n) denotes linear complexity. The running time of the algorithm increases linearly with the size of the input.
+O(n) denotes linear complexity. The execution time of an algorithm grows linearly with the size of the input data.
 
-### Diagram
+### Example
 
-<!-- ![O(n) Diagram](path_to_o_n_diagram) -->
-
-### In Action (Coding)
+Consider an array of groceries:
 
 ```javascript
-function linearSearch(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-      return i;
+const groceries = ["milk", "bread", "eggs", "flour", "cheese", "sugar"];
+
+const searchForItem = (item) => {
+  for (let i = 0; i < groceries.length; i++) {
+    if (groceries[i] === item) {
+      console.log(`Found ${item}`);
     }
   }
-  return -1;
-}
+};
+
+searchForItem("eggs"); // Output: Found eggs
 ```
 
 ### Drop the Constants
 
 When analyzing O(n) complexity, constants are dropped. For example, O(2n) simplifies to O(n).
+
+```javascript
+const searchForItem = (item) => {
+  for (let i = 0; i < groceries.length; i++) {
+    if (groceries[i] === item) {
+      console.log(`Found ${item}`);
+    }
+  }
+
+  for (let j = 0; j < groceries.length; j++) {
+    if (groceries[j] === item) {
+      console.log(`Found ${item} 2`);
+    }
+  }
+
+  // n + n = 2n -> O(2n)
+  // Drop the constant so it becomes O(n)
+};
+
+searchForItem("eggs");
+```
