@@ -1,0 +1,8 @@
+{
+  "label": "Big O",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about Big O notation, including time and space complexity."
+  }
+}
