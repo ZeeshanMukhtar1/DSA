@@ -1,8 +1,11 @@
 ---
 id: introduction
+# sidebar_label: 'Introduction to Arrays'
 title: Introduction to Arrays
 sidebar_position: 1
 ---
+
+<!-- sidebar-label and title works same : both chnage the title of the topic in sidebar 😑 -->
 
 ## What is an Array in JavaScript?
 
